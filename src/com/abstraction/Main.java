@@ -1,8 +1,9 @@
 package com.abstraction;
-
+// Deadline 7 PM
 public class Main {
     public static void main(String[] args) {
         // all names are imaginary (no Ai this time)
+        //Q1:
         Book b1 = new Book();
         Book b2 = new Book("Mathematics: introduction", 130.57,"Dr. Maths");
         Book b3 = new Book("Algorithms: final proofs", 650.99, "Dr. Algo");
@@ -54,6 +55,7 @@ public class Main {
         System.out.println("Movie 5 title: "+m5.getName()+" price: "+ m5.getPrice()+" Director: "+m5.getDirector());
         System.out.println("Movie 5 has a discount of: "+m5.getDiscount());
 
+        //Q2:
 
     }
 }
