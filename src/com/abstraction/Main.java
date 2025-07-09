@@ -56,6 +56,50 @@ public class Main {
         System.out.println("Movie 5 has a discount of: "+m5.getDiscount());
 
         //Q2:
+        MovablePoint point = new MovablePoint(0,0,10,10);
+        System.out.println("Initial point location is: ("+point.getX()+", "+point.getY()+")");
+
+        System.out.println("Moving up "+point.getySpeed()+" points");
+        point.moveUp();
+        System.out.println("New point location is: ("+point.getX()+", "+point.getY()+")");
+
+        System.out.println("Moving right "+point.getxSpeed()+" points");
+        point.moveRight();
+        System.out.println("New point location is: ("+point.getX()+", "+point.getY()+")");
+
+        System.out.println("Moving down "+(point.getySpeed()*-1)+" points");
+        point.moveDown();
+        System.out.println("New point location is: ("+point.getX()+", "+point.getY()+")");
+
+        System.out.println("Moving left "+(point.getxSpeed()*-1)+" points");
+        point.moveLeft();
+        System.out.println("New point location is: ("+point.getX()+", "+point.getY()+")");
+        System.out.println("The point returned to its initial location");
+
+        System.out.println("Changing location manually to (50, 13)");
+        point.setX(50);
+        point.setY(13);
+        System.out.println("New point location is: ("+point.getX()+", "+point.getY()+")");
+        System.out.println("Changing speed to very fast x100, y300");
+        point.setxSpeed(100);
+        point.setySpeed(300);
+
+        System.out.println("Moving up "+point.getySpeed()+" points");
+        point.moveUp();
+        System.out.println("New point location is: ("+point.getX()+", "+point.getY()+")");
+
+        System.out.println("Moving right "+point.getxSpeed()+" points");
+        point.moveRight();
+        System.out.println("New point location is: ("+point.getX()+", "+point.getY()+")");
+
+        System.out.println("Moving down "+(point.getySpeed()*-1)+" points");
+        point.moveDown();
+        System.out.println("New point location is: ("+point.getX()+", "+point.getY()+")");
+
+        System.out.println("Moving left "+(point.getxSpeed()*-1)+" points");
+        point.moveLeft();
+        System.out.println("New point location is: ("+point.getX()+", "+point.getY()+")");
+        System.out.println("The point returned to its initial location");
 
     }
 }
